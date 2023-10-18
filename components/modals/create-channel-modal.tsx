@@ -144,7 +144,10 @@ export const CreateChannelModal = () => {
                       </FormControl>
                       <SelectContent>
                         {Object.values(ChannelType).map((type) => (
-                          <SelectItem key={type} value={type}>
+                          <SelectItem
+                            key={type}
+                            value={type}
+                            className="capitalize">
                             {type.toLocaleLowerCase()}
                           </SelectItem>
                         ))}
