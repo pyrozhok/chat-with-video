@@ -55,7 +55,7 @@ model Member {
   profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
 
   serverId String
-  server Server @relation(fields: [serverId], references: [id], onDelete: Cascade) 
+  server Server @relation(fields: [serverId], references: [id], onDelete: Cascade)
 
   messages Message[]
   directMessages DirectMessage[]
@@ -64,12 +64,11 @@ model Member {
   conversationsReceived Conversation[] @relation("MemberTwo")
 
   createdAt DateTime @default(now())
-  updates DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 
   @@index([profileId])
   @@index([serverId])
 }
-
 
 enum ChannelType {
   TEXT
@@ -127,7 +126,7 @@ model Conversation {
   memberTwoId String
   memberTwo Member @relation("MemberTwo", fields: [memberTwoId], references: [id], onDelete: Cascade)
 
-  directMesages DirectMessage[]
+  directMessages DirectMessage[]
 
   @@index([memberTwoId])
 
