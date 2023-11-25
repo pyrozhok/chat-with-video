@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat with video calls
+![image](https://github.com/pyrozhok/chat-with-video/assets/5194872/4990f90e-4145-4980-866b-fa0da23fc004)
 
-## Getting Started
+## Features
+* Authentication with [Clerk](https://clerk.com/)
+* Real-time chat using socket.io
+* 1:1 conversation between members
+* 1:1 Audio and video calls and screen sharing with [LiveKit](https://livekit.io/) 
+* Member management (Kick, Role change Guest / Moderator)
+* Server creation and customization 
+* Text, Audio and Video channels
+* Unique invite link generation
+* Image upload with [UploadThing](https://uploadthing.com/)
 
-First, run the development server:
+## Screenshots
+### Server settings
+![image](https://github.com/pyrozhok/chat-with-video/assets/5194872/41ef2927-3d78-4b7a-a4a8-fa35f54fb4ef)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 1:1 Video calls
+![image](https://github.com/pyrozhok/chat-with-video/assets/5194872/c1e6f79a-1b3c-4067-89d0-9872c7b06255)
