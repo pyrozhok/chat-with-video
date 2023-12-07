@@ -123,12 +123,12 @@ export const EditChannelModal = () => {
                     </FormLabel>
                     <FormControl>
                       <Input
+                        {...field}
                         disabled={isLoading}
                         placeholder="Enter channel name"
                         className="bg-zinc-300/50 border-0 
                         focus-visible:ring-0 text-black 
                         focus-visible:ring-offset-0"
-                        {...field}
                       />
                     </FormControl>
                     <FormMessage />

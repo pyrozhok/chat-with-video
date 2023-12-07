@@ -102,6 +102,7 @@ export const CreateServerModal = () => {
                           onChange={field.onChange}
                         />
                       </FormControl>
+                      <FormMessage />
                     </FormItem>
                   )}
                 />
@@ -119,12 +120,12 @@ export const CreateServerModal = () => {
                     </FormLabel>
                     <FormControl>
                       <Input
+                        {...field}
                         disabled={isLoading}
                         placeholder="Enter server name"
                         className="bg-zinc-300/50 border-0 
                         focus-visible:ring-0 text-black 
                         focus-visible:ring-offset-0"
-                        {...field}
                       />
                     </FormControl>
                     <FormMessage />
